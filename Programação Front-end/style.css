@@ -22,3 +22,18 @@ p{
     color: rgb(93, 245, 245);
     margin-top: 25px;
 }
+
+.texto{
+    margin: 20px 0px 10px 0px;
+    color: blue;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Meduim', 'Arial Narrow', Arial, sans-serif
+
+}
+
+#rodape{
+    font-size: 12px;
+    color: blue;
+    width: 100px;
+    margin-top: 25px;
+}
