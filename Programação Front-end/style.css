@@ -9,10 +9,17 @@ header{
 }
 
 a{
-    color: aliceblue;
+    color: rgb(59, 71, 238);
     text-decoration: none;
+
 }
 
 body{
     background-color: rgb(0, 0, 0);
+}
+
+p{
+    color: rgb(93, 245, 245);
+    margin: 25px;
+    margin-left: 0px;
 }
