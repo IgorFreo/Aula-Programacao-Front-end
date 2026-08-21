@@ -1,39 +1,63 @@
-*{
-    margin: 0px;
+:root {
+    --dark-amethyst: #3a015cff;
+    --dark-amethyst-2: #32004fff;
+    --dark-amethyst-3: #220135ff;
+    --midnight-violet: #190028ff;
+    --midnight-violet-2: #11001cff;
+
+    --cor-primaria: #3498db;
+    --cor-secundaria: #6c757d;
+    --cor-sucesso: #28a745;
+    --cor-aviso: #ffc107;
+    --cor-erro: #dc3545;
+
+    --cor-texto-principais: #0A090C;
+    --cor-texto-secundarios: #313131;
+    --cor-texto-branco: #fcf8f8;
+    --cor-text-branco-50: #e2e2e2;
+
+    --font-de-legenda:"Arial";
+
+
+    --font-principal: 'Roboto', sans-serif;
+    --font-secundaria: 'Noto sans', sans-serif;
+}
+
+
+* {
     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-header{
-    background-color: rgb(255, 255, 255);
-    width: 150px;
+body {
+    font-family: var(--font-principal);
 }
 
-a{
-    color: rgb(59, 71, 238);
+.menu {
+    background-color: var(--midnight-violet-2);
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    color: var(--cor-texto-branco);
+    float: left;
+}
+
+
+.brand {
+    font-size: 22pt;
+    width: 50px;
+    float: left;
+}
+
+.menu-elementos {
+    width: 500px;
+    float: left;
+}
+
+.menu-elementos a {
+    padding: 10px;
     text-decoration: none;
-
-}
-
-body{
-    background-color: rgb(0, 0, 0);
-}
-
-p{
-    color: rgb(93, 245, 245);
-    margin-top: 25px;
-}
-
-.texto{
-    margin: 20px 0px 10px 0px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-family: 'Franklin Gothic Meduim', 'Arial Narrow', Arial, sans-serif
-
-}
-
-#rodape{
-    font-size: 12px;
-    color: rgb(255, 255, 255);
-    width: 150px;
-    margin-top: 25px;
+    color: var(--cor-texto-branco);
+    font-size: 18pt;
 }
