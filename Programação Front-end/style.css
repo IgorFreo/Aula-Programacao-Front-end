@@ -61,3 +61,7 @@ body {
     color: var(--cor-texto-branco);
     font-size: 18pt;
 }
+
+.banner-img{
+    width: 100%;
+}
