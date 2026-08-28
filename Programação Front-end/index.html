@@ -1,62 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival de Música</title>
-    <!-- Importação de fontes exeterna -->
+    <title>Festival de Musica - W:O:A</title>
+    <!-- Importação de fonts externa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!-- Importação de ícones -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
-
-    <link rel="stylesheet" href="./style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Importação de icones -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <header class="cabecalo">
+    <header class="cabecalho">
         <nav class="menu">
             <div class="brand">
-                <i class="ph ph-skull"></i>
+                <i class="ph ph-skull"></i> W:O:A
             </div>
-
             <div class="menu-elementos">
                 <a href="./index.html">Início</a>
-                <a href="">Atrações</a>
-                <a href="">O Evento</a>
-                <a href="">Contato</a>
+                <a href="#atracoes">Atrações</a>
+                <a href="#sobre">Sobre o Evento</a>
+                <a href="#contato">Contato</a>
             </div>
         </nav>
         <div class="banner">
-            <img class="banner-img" src="./assets/32-forum-ecommerce-brasil-2026.png.png" alt=""> 
+            <h1>WACKEN OPEN AIR</h1>
+            <p>O maior festival de Heavy Metal do mundo</p>
         </div>
     </header>
-    <principal>
+
+    <main>
         <section id="inicio">
             <!-- Vamos criar os destaques do site aqui -->
         </section>
+
         <section id="atracoes">
             <!-- Vamos criar os elementos para as atrações -->
         </section>
+
         <section id="sobre">
-            <!-- Sobre o evento -->
+            <!-- sobre o evento -->
+            <div class="container">
+                <h2 class="titulo">Sobre o Eventos</h2>
+                <div class="sobre-conteudo">
+                    <p>
+                        O Wacken Open Air (W:O:A) é um dos maiores festivais de heavy metal do mundo.
+                        Realizado anualmente em Wacken, na Alemanha, atrai milhares de fãs e promove bandas
+                        internacionais. Desde 1990, o evento já se tornou um dos principais encontros da cultura metal,
+                        com shows, camping, atrações e muita música.
+                    </p>
+                </div>
+
+                <h3 class="sub-titulo">Perguntas frequentes</h3>
+                <div class="sobre-conteudo">
+                    <ul>
+                        <li>Quando será realizado o Evento?</li>
+                        <li>Como posso chegar no Evento?</li>
+                        <li>Onde posso Comprar meu Ingresso?</li>
+                        <li>Estudante tem direito a meia entrada?</li>
+                    </ul>
+                </div>
+
+                <h3 class="sub-titulo">Regras eventos</h3>
+                <div class="sobre-conteudo">
+                    <ol>
+                        <li>Proibida a entrada de menores de 18 anos desacompanhados.</li>
+                        <li>Proibida a entrada portando bebidas alcoólicas.</li>
+                        <li>Os participantes do evento podem entrar e sair da dependencia do evento desde que estejam portando seu passe de acesso.</li>
+                    </ol>
+                </div>
+            </div>
         </section>
+
         <section id="contato">
-            <!-- Formulário simples para contato -->
+            <!-- Formulario simples para contato -->
+            <div class="container">
+                <h2 class="titulo">Contato</h2>
+            </div>
         </section>
     </main>
 
     <footer></footer>
 </body>
-
 </html>
