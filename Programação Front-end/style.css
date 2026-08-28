@@ -1,9 +1,9 @@
 :root {
-    --dark-amethyst: #3a015cff;
-    --dark-amethyst-2: #32004fff;
-    --dark-amethyst-3: #220135ff;
-    --midnight-violet: #190028ff;
-    --midnight-violet-2: #11001cff;
+    --dark-amethyst: #3a015c;
+    --dark-amethyst-2: #32004f;
+    --dark-amethyst-3: #220135;
+    --midnight-violet: #190028;
+    --midnight-violet-2: #11001c;
 
     --cor-primaria: #3498db;
     --cor-secundaria: #6c757d;
@@ -16,13 +16,9 @@
     --cor-texto-branco: #fcf8f8;
     --cor-text-branco-50: #e2e2e2;
 
-    --font-de-legenda:"Arial";
-
-
     --font-principal: 'Roboto', sans-serif;
-    --font-secundaria: 'Noto sans', sans-serif;
+    --font-secundaria: 'Noto Sans', sans-serif;
 }
-
 
 * {
     padding: 0px;
@@ -32,6 +28,8 @@
 
 body {
     font-family: var(--font-principal);
+    background-color: #0f0f0f;
+    color: var(--cor-texto-branco);
 }
 
 .menu {
@@ -40,28 +38,73 @@ body {
     max-width: 1920px;
     margin: auto;
     color: var(--cor-texto-branco);
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
 }
-
 
 .brand {
     font-size: 22pt;
-    width: 50px;
-    float: left;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .menu-elementos {
-    width: 500px;
-    float: left;
+    display: flex;
+    gap: 10px;
 }
 
 .menu-elementos a {
     padding: 10px;
     text-decoration: none;
     color: var(--cor-texto-branco);
-    font-size: 18pt;
+    font-size: 14pt;
+    transition: 0.3s;
 }
 
-.banner-img{
-    width: 100%;
+.menu-elementos a:hover {
+    color: var(--cor-aviso);
+}
+
+.banner {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(17,0,28,0.9)), url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2070') center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.titulo{
+    font-size: 28pt;
+    margin-bottom: 20px;
+    color: var(--cor-aviso);
+}
+
+.sub-titulo{
+    font-size: 18pt;
+    margin: 30px 0 15px;
+}
+
+.sobre-conteudo{
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--dark-amethyst);
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo ul{
+    list-style: inside;
+    line-height: 2;
 }
