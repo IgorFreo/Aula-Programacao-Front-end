@@ -1,9 +1,13 @@
 :root {
-    --dark-amethyst: #3a015c;
-    --dark-amethyst-2: #32004f;
-    --dark-amethyst-3: #220135;
-    --midnight-violet: #190028;
-    --midnight-violet-2: #11001c;
+
+    --azul-escuro:#043250;
+    --azul-claro:#0e93d5;
+    --amarelo-ouro:#e7ba17;
+    --amarelo-claro:#166c63;
+    --amarelo-ofuscado:#8e792e;
+
+
+
 
     --cor-primaria: #3498db;
     --cor-secundaria: #6c757d;
@@ -28,17 +32,17 @@
 
 body {
     font-family: var(--font-principal);
-    background-color: #0f0f0f;
+    background-color: var(--azul-escuro);
     color: var(--cor-texto-branco);
 }
 
 .menu {
-    background-color: var(--midnight-violet-2);
+    background-color: var(--amarelo-ofuscado);
     width: 100%;
     max-width: 1920px;
     margin: auto;
     color: var(--cor-texto-branco);
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
@@ -54,7 +58,7 @@ body {
 
 .menu-elementos {
     display: flex;
-    gap: 10px;
+    gap: px;
 }
 
 .menu-elementos a {
@@ -71,7 +75,7 @@ body {
 
 .banner {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(17,0,28,0.9)), url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2070') center/cover;
+    background: url('../assets/39-Premio-E-Commerce-Brasil-2026-Forum-ECBR.jpeg.png') center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,25 +90,58 @@ body {
 }
 
 .titulo{
-    font-size: 28pt;
+    font-size: 24pt;
     margin-bottom: 20px;
     color: var(--cor-aviso);
 }
 
 .sub-titulo{
-    font-size: 18pt;
+    font-size: 24pt;
     margin: 30px 0 15px;
 }
 
 .sobre-conteudo{
     background: #1a1a1a;
-    padding: 20px;
+    padding: 24px;
     border-radius: 8px;
-    border-left: 4px solid var(--dark-amethyst);
+    border-left: 4px solid var(--azul-escurot);
     margin-bottom: 20px;
 }
 
-.sobre-conteudo ul{
-    list-style: inside;
-    line-height: 2;
+.sobre-conteudo p{
+    line-height: 22pt;
+}
+
+.sobre-conteudo ul li, .sobre-conteudo ol li{
+    margin-bottom: 16px;
+}
+
+.link-texto{
+    color: var(--amarelo-ouro);
+
+    &:hover{
+        color: var(--amarelo-ofuscado);
+    }
+}
+
+.sub-titulo{
+    color: var(--amarelo-ouro); 
+}
+
+.card {
+    width: 300px;
+    float: left;
+    font-size: 12pt;
+    background: #1a1a1a;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 16pt;
+    color: var(--amarelo-);
 }
