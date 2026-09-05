@@ -1,10 +1,10 @@
 :root {
 
-    --azul-escuro:#043250;
-    --azul-claro:#0e93d5;
-    --amarelo-ouro:#e7ba17;
-    --amarelo-claro:#166c63;
-    --amarelo-ofuscado:#8e792e;
+    --azul-escuro: #043250;
+    --azul-claro: #0e93d5;
+    --amarelo-ouro: #e7ba17;
+    --amarelo-claro: #166c63;
+    --amarelo-ofuscado: #8e792e;
 
 
 
@@ -42,7 +42,7 @@ body {
     max-width: 1920px;
     margin: auto;
     color: var(--cor-texto-branco);
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
@@ -75,7 +75,9 @@ body {
 
 .banner {
     height: 60vh;
-    background: url('../assets/39-Premio-E-Commerce-Brasil-2026-Forum-ECBR.jpeg.png') center/cover;
+    background: url("/assets/E-commerce-Brasil.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,24 +85,24 @@ body {
     text-align: center;
 }
 
-.container{
+.container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 20px;
 }
 
-.titulo{
+.titulo {
     font-size: 24pt;
     margin-bottom: 20px;
     color: var(--cor-aviso);
 }
 
-.sub-titulo{
+.sub-titulo {
     font-size: 24pt;
     margin: 30px 0 15px;
 }
 
-.sobre-conteudo{
+.sobre-conteudo {
     background: #1a1a1a;
     padding: 24px;
     border-radius: 8px;
@@ -108,24 +110,33 @@ body {
     margin-bottom: 20px;
 }
 
-.sobre-conteudo p{
+.contato {
+    background: #1a1a1a;
+    padding: 24px;
+    border-radius: 8px;
+    border-left: 4px solid var(--azul-escurot);
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo p {
     line-height: 22pt;
 }
 
-.sobre-conteudo ul li, .sobre-conteudo ol li{
+.sobre-conteudo ul li,
+.sobre-conteudo ol li {
     margin-bottom: 16px;
 }
 
-.link-texto{
+.link-texto {
     color: var(--amarelo-ouro);
 
-    &:hover{
+    &:hover {
         color: var(--amarelo-ofuscado);
     }
 }
 
-.sub-titulo{
-    color: var(--amarelo-ouro); 
+.sub-titulo {
+    color: var(--amarelo-ouro);
 }
 
 .card {
@@ -137,11 +148,113 @@ body {
     border-radius: 8px;
     margin-bottom: 20px;
     margin-right: 20px;
-    
+
 }
 
 .card h3 {
     margin-bottom: 12px;
     font-size: 16pt;
     color: var(--amarelo-);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--amarelo-ouro);
+    }
+}
+
+.btn-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-elementos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .btn-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--cor-texto-branco);
+        font-size: 24pt;
+        padding: 6px;
+        border-radius: 6px;
+        border: 1px solid var(--cor-erro);
+        user-select: none;
+        transition: background-color 0.2s, ease, color 0, 2s ease;
+    }
+
+    .btn-menu:hover {
+        background-color: var(--dark-amethyst);
+        color: var(--cor-primaria);
+    }
+
+    .btn-menu .icone-abrir {
+        display: block;
+    }
+
+    .btn-menu .icone-fechar {
+        display: none;
+    }
+
+    .menu-elementos {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--midnight-violet-2);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.35s ease, opacity 0.3s ease, visibility 0.35s ease, padding 0.3s ease;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+        z-index: 1000;
+    }
+
+    .menu-toggle:checked~.menu-elementos {
+        max-height: 350px;
+        opacity: 1;
+        visibility: visible;
+        padding: 8px 0 12px 0;
+    }
+
+    .menu-toggle:checked~.btn-menu .icone-abrir {
+        display: none;
+    }
+
+    .menu-toggle:checked~.btn-menu .icone-fechar {
+        display: block;
+    }
+
+    .menu-link {
+        padding: 14px 24px;
+        font-size: 13pt;
+        border-radius: 0;
+        border-left: 4px solid transparent;
+        display: block;
+    }
+
+    .menu-link:hover,
+    .menu-link:focus {
+        background-color: var(--dark-amethyst-3);
+        border-left-color: var(--cor-primaria);
+        padding-left: 28px;
+        transform: none;
+    }
 }
