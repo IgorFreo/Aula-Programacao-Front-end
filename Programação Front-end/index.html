@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,33 @@
     <!-- Importação de fonts externa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Importação de icones -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <!-- Seu CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <nav class="menu">
             <div class="brand">
                 E-Commerce Brasil 2026
             </div>
+
+            <!--Checkbox para controle do menu responsivo via CSS -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir e fechar menu">
+
+            <!--Icone/Botão acionando pelo clique na label -->
+            <label for="menu-elementos" class="btn-menu">
+                <i class="ph ph-list icone-abrir"></i>
+                <i class="ph ph-x icone-fechar"></i>
+            </label>
             <div class="menu-elementos">
                 <a href="./index.html">Início</a>
                 <a href="#atracoes">Atrações</a>
@@ -30,7 +45,7 @@
             </div>
         </nav>
         <div class="banner">
-           
+
         </div>
     </header>
 
@@ -41,30 +56,30 @@
 
         <section id="atracoes">
             <!-- Vamos criar os elementos para as atrações -->
-             <section id="atracoes">
-    <div class="container">
-        <h2 class="titulo">Atrações:</h2>
+            <section id="atracoes">
+                <div class="container">
+                    <h2 class="titulo">Atrações:</h2>
 
-        <div class="cards-atracoes">
+                    <div class="cards-atracoes">
 
-            <div class="card">
-                <h3>Palestras:</h3>
-                <p>Conteúdos sobre tecnologia, inovação e comércio eletrônico.</p>
-            </div>
+                        <div class="card">
+                            <h3>Palestras:</h3>
+                            <p>Conteúdos sobre tecnologia, inovação e comércio eletrônico.</p>
+                        </div>
 
-            <div class="card">
-                <h3>Workshops:</h3>
-                <p>Atividades práticas para os participantes.</p>
-            </div>
+                        <div class="card">
+                            <h3>Workshops:</h3>
+                            <p>Atividades práticas para os participantes.</p>
+                        </div>
 
-            <div class="card">
-                <h3>Painéis:</h3>
-                <p>Debates sobre o futuro do comércio eletrônico.</p>
-            </div>
+                        <div class="card">
+                            <h3>Painéis:</h3>
+                            <p>Debates sobre o futuro do comércio eletrônico.</p>
+                        </div>
 
-        </div>
-    </div>
-</section>
+                    </div>
+                </div>
+            </section>
         </section>
 
         <section id="sobre">
@@ -73,7 +88,13 @@
                 <h2 class="titulo">Sobre o Evento:</h2>
                 <div class="sobre-conteudo">
                     <p>
-  A história do Fórum E-Commerce Brasil reflete a própria evolução do comércio eletrônico no país, expandindo-se de uma iniciativa nacional voltada à profissionalização do setor até se consolidar como um dos maiores eventos de e-commerce do mundo. Ao longo dos anos, a trajetória acompanhou o amadurecimento do mercado digital, transicionando de debates básicos sobre criação de sites para discussões avançadas sobre logística, inteligência artificial e ecossistemas de negócios. Para mais detalhes, visite <a class="link-texto" href="https://www.ecommercebrasil.com.br/forum">Fórum E-Commerce Brasil.</a>
+                        A história do Fórum E-Commerce Brasil reflete a própria evolução do comércio eletrônico no país,
+                        expandindo-se de uma iniciativa nacional voltada à profissionalização do setor até se consolidar
+                        como um dos maiores eventos de e-commerce do mundo. Ao longo dos anos, a trajetória acompanhou o
+                        amadurecimento do mercado digital, transicionando de debates básicos sobre criação de sites para
+                        discussões avançadas sobre logística, inteligência artificial e ecossistemas de negócios. Para
+                        mais detalhes, visite <a class="link-texto"
+                            href="https://www.ecommercebrasil.com.br/forum">Fórum E-Commerce Brasil.</a>
                     </p>
                 </div>
 
@@ -90,10 +111,14 @@
                 <h3 class="sub-titulo">Regras do Evento:</h3>
                 <div class="sobre-conteudo">
                     <ol>
-                        <li>Faixa Etária: É proibida a entrada de menores de 18 anos desacompanhados dos pais ou responsáveis legais.</li>
-                        <li>Livre Trânsito: Os participantes cadastrados podem entrar e sair das dependências do evento quantas vezes forem necessárias ao longo do dia.</li>
-                        <li>Os participantes do evento podem entrar e sair da dependencia do evento desde que estejam portando seu passe de acesso.</li>
-                         <li>Bebidas: Fica expressamente proibida a entrada de qualquer pessoa portando bebidas alcoólicas trazidas de fora do pavilhão.</li>
+                        <li>Faixa Etária: É proibida a entrada de menores de 18 anos desacompanhados dos pais ou
+                            responsáveis legais.</li>
+                        <li>Livre Trânsito: Os participantes cadastrados podem entrar e sair das dependências do evento
+                            quantas vezes forem necessárias ao longo do dia.</li>
+                        <li>Os participantes do evento podem entrar e sair da dependencia do evento desde que estejam
+                            portando seu passe de acesso.</li>
+                        <li>Bebidas: Fica expressamente proibida a entrada de qualquer pessoa portando bebidas
+                            alcoólicas trazidas de fora do pavilhão.</li>
                     </ol>
                 </div>
             </div>
@@ -102,12 +127,22 @@
         <section id="contato">
             <!-- Formulario simples para contato -->
             <div class="container">
-                <h2 class="titulo">Contato</h2>
+                <h2 class="titulo">Contato:</h2>
+                <div class="contato">
+                    <ol>
+                        <li>Gmail: .</li>
+                        <li>Instagram: @ecommerce_br.
+                        <li>
+                        <li>Linkedin: .</li>
+                        <li>Facebook: .</li>
+                    </ol>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-       </footer>
+    </footer>
 </body>
+
 </html>
